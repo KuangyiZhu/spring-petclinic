@@ -29,13 +29,9 @@ jobs:
       run: ./mvnw spring-boot:build-image
     - name: docker info
       run: docker info
-    - name: docker push
-      run: docker push
-    - name: docker pull
-      run: docker pull docker.io/library/spring-petclinic:3.3.0-SNAPSHOT
     - name: pwd
       run: pwd
     - name: list up
-      run: ls -l
+      run: ls -l /var/lib/docker
     - name: docker images
       run: docker images
