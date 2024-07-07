@@ -27,6 +27,8 @@ jobs:
     - name: Build the Docker image
       #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       run: ./mvnw spring-boot:build-image
-    - name: log in
+    - name: docker log in
       run: echo "tqa371tqa371" | docker login -u "kuangyizhu01" --password-stdin
+    - name: docker tag
+      run: docker tag kuangyizhu01-spring-petclinic:3.3.0-SNAPSHOT docker.io/kuangyizhu01/spring-petclinic:3.3.0-SNAPSHOT
 
