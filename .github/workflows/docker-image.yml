@@ -31,4 +31,5 @@ jobs:
       run: echo "tqa371tqa371" | docker login -u "kuangyizhu01" --password-stdin
     - name: docker tag
       run: docker tag spring-petclinic:3.3.0-SNAPSHOT docker.io/kuangyizhu01/spring-petclinic:3.3.0-SNAPSHOT
-
+    - name: docker push
+      run: docker push docker.io/kuangyizhu01/spring-petclinic:3.3.0-SNAPSHOT
