@@ -27,5 +27,11 @@ jobs:
     - name: Build the Docker image
       #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       run: ./mvnw spring-boot:build-image
+    - name: dock pull
+      run: docker pull docker.io/library/spring-petclinic:3.3.0-SNAPSHOT
+    - name: pwd
+      run: pwd
     - name: list up
       run: ls -l
+    - name: docker images
+      run: docker images
