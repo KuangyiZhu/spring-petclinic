@@ -3,6 +3,8 @@ name: Docker Image CI
 on:
   workflow_run:
     workflows: ["Java CI with Maven"]
+    types:
+      - completed
 jobs:
 
   build:
