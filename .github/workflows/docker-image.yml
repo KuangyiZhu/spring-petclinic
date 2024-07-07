@@ -31,6 +31,6 @@ jobs:
       # run: echo "tqa371tqa371" | docker login -u "kuangyizhu01" --password-stdin
       run: echo "Tqa371tqa371" |docker login kuangyiinterview.jfrog.io -u "kuangyizhu@gmail.com" --password-stdin
     - name: docker tag
-      run: docker tag spring-petclinic:3.3.0-SNAPSHOT docker.io/kuangyizhu01/spring-petclinic:3.3.0-SNAPSHOT
+      run: docker tag spring-petclinic:3.3.0-SNAPSHOT kuangyiinterview.jfrog.io/kuangyizhu01-docker/spring-petclinic:3.3.0-SNAPSHOT
     - name: docker push
-      run: docker push kuangyiinterview.jfrog.io/docker-repo/spring-petclinic:3.3.0-SNAPSHOT
+      run: docker push kuangyiinterview.jfrog.io/kuangyizhu01-docker/spring-petclinic:3.3.0-SNAPSHOT
