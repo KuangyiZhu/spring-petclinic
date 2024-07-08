@@ -1,0 +1,42 @@
+[
+   {
+      "user_issue_id": "1810315248289091584",
+      "comp_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+      "component_package_type": "docker",
+      "comp_name": "spring-petclinic",
+      "comp_version": "3.3.0-SNAPSHOT",
+      "type": "security",
+      "targets": null,
+      "issue_id": "EXP-1681-00001",
+      "paths": [
+         "default/kuangyizhu01-docker-local/spring-petclinic/3.3.0-SNAPSHOT/manifest.json"
+      ],
+      "watcher_id": "988416b0fc46c6c41b7cdba4",
+      "watcher_name": "Security_watch_1",
+      "matched_policies": [
+         {
+            "policy": "Security_policy_1",
+            "rule": "High_Exposures",
+            "is_blocking": false,
+            "blocking_mask": 0
+         }
+      ],
+      "summary": "Hardcoded secrets were found",
+      "severity": "High",
+      "updated": "2024-07-08T14:09:23Z",
+      "permissions": {},
+      "is_source_root": true,
+      "is_high_profile": false,
+      "is_exposures_issue": true,
+      "exposures_data": {
+         "category": "secrets",
+         "file_path": "/layers/paketo-buildpacks_bellsoft-liberica/jre/conf/management/jmxremote.password.template",
+         "repo": "kuangyizhu01-docker-local",
+         "path": "/spring-petclinic/3.3.0-SNAPSHOT/manifest.json"
+      },
+      "is_package_issue": false,
+      "source": "spring-petclinic",
+      "source_version": "3.3.0-SNAPSHOT",
+      "source_id": "docker://spring-petclinic"
+   }
+]

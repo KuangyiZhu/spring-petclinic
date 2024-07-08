@@ -1,0 +1,2796 @@
+{
+   "total_count": 24,
+   "data": [
+      {
+         "id": "XRAY-26349",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:coreutils",
+         "source_id": "deb://ubuntu:jammy:coreutils",
+         "source_comp_id": "deb://ubuntu:jammy:coreutils:8.32-4.1ubuntu1.2",
+         "component_versions": {
+            "id": "ubuntu:jammy:coreutils",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2016-2781",
+                     "cwe": [
+                        "CWE-20"
+                     ],
+                     "cwe_details": {
+                        "CWE-20": {
+                           "name": "Improper Input Validation",
+                           "description": "The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "6"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v2": "2.1/CVSS:2.0/AV:L/AC:L/Au:N/C:N/I:P/A:N",
+                     "cvss_v3": "6.5/CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2016-2781",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-413268",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:gcc-12-base",
+         "source_id": "deb://ubuntu:jammy:gcc-12-base",
+         "source_comp_id": "deb://ubuntu:jammy:gcc-12-base:12.3.0-1ubuntu1~22.04",
+         "component_versions": {
+            "id": "ubuntu:jammy:gcc-12",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2022-27943",
+                     "cwe": [
+                        "CWE-674"
+                     ],
+                     "cwe_details": {
+                        "CWE-674": {
+                           "name": "Uncontrolled Recursion",
+                           "description": "The product does not properly control the amount of recursion that takes place, consuming excessive resources, such as allocated memory or the program stack."
+                        }
+                     },
+                     "cvss_v2": "4.3/CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "5.5/CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2022-27943",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-256472",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:gpgv",
+         "source_id": "deb://ubuntu:jammy:gpgv",
+         "source_comp_id": "deb://ubuntu:jammy:gpgv:2.2.27-3ubuntu2.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:gnupg2",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2022-3219",
+                     "cwe": [
+                        "CWE-787"
+                     ],
+                     "cwe_details": {
+                        "CWE-787": {
+                           "name": "Out-of-bounds Write",
+                           "description": "The product writes data past the end, or before the beginning, of the intended buffer.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "1"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v3": "3.3/CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+                  }
+               ],
+               "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2022-3219",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-225378",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libc-bin",
+         "source_id": "deb://ubuntu:jammy:libc-bin",
+         "source_comp_id": "deb://ubuntu:jammy:libc-bin:2.35-0ubuntu3.8",
+         "component_versions": {
+            "id": "ubuntu:jammy:glibc",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2016-20013",
+                     "cwe": [
+                        "CWE-770"
+                     ],
+                     "cwe_details": {
+                        "CWE-770": {
+                           "name": "Allocation of Resources Without Limits or Throttling",
+                           "description": "The product allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor."
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "7.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2016-20013",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-225378",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libc6",
+         "source_id": "deb://ubuntu:jammy:libc6",
+         "source_comp_id": "deb://ubuntu:jammy:libc6:2.35-0ubuntu3.8",
+         "component_versions": {
+            "id": "ubuntu:jammy:glibc",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2016-20013",
+                     "cwe": [
+                        "CWE-770"
+                     ],
+                     "cwe_details": {
+                        "CWE-770": {
+                           "name": "Allocation of Resources Without Limits or Throttling",
+                           "description": "The product allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor."
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "7.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2016-20013",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-413268",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgcc-s1",
+         "source_id": "deb://ubuntu:jammy:libgcc-s1",
+         "source_comp_id": "deb://ubuntu:jammy:libgcc-s1:12.3.0-1ubuntu1~22.04",
+         "component_versions": {
+            "id": "ubuntu:jammy:gcc-12",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2022-27943",
+                     "cwe": [
+                        "CWE-674"
+                     ],
+                     "cwe_details": {
+                        "CWE-674": {
+                           "name": "Uncontrolled Recursion",
+                           "description": "The product does not properly control the amount of recursion that takes place, consuming excessive resources, such as allocated memory or the program stack."
+                        }
+                     },
+                     "cvss_v2": "4.3/CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "5.5/CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2022-27943",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-593624",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgcrypt20",
+         "source_id": "deb://ubuntu:jammy:libgcrypt20",
+         "source_comp_id": "deb://ubuntu:jammy:libgcrypt20:1.9.4-3ubuntu3",
+         "component_versions": {
+            "id": "ubuntu:jammy:libgcrypt20",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-2236",
+                     "cwe": [
+                        "CWE-208"
+                     ],
+                     "cwe_details": {
+                        "CWE-208": {
+                           "name": "Observable Timing Discrepancy",
+                           "description": "Two separate operations in a product require different amounts of time to complete, in a way that is observable to an actor and reveals security-relevant information about the state of the product, such as whether a particular operation was successful or not."
+                        }
+                     }
+                  }
+               ],
+               "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-2236",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592208",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgssapi-krb5-2",
+         "source_id": "deb://ubuntu:jammy:libgssapi-krb5-2",
+         "source_comp_id": "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26458"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26458",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592209",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgssapi-krb5-2",
+         "source_id": "deb://ubuntu:jammy:libgssapi-krb5-2",
+         "source_comp_id": "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26461"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26461",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592210",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgssapi-krb5-2",
+         "source_id": "deb://ubuntu:jammy:libgssapi-krb5-2",
+         "source_comp_id": "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26462"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26462",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592208",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libk5crypto3",
+         "source_id": "deb://ubuntu:jammy:libk5crypto3",
+         "source_comp_id": "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26458"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26458",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592209",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libk5crypto3",
+         "source_id": "deb://ubuntu:jammy:libk5crypto3",
+         "source_comp_id": "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26461"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26461",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592210",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libk5crypto3",
+         "source_id": "deb://ubuntu:jammy:libk5crypto3",
+         "source_comp_id": "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26462"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26462",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592208",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5-3",
+         "source_id": "deb://ubuntu:jammy:libkrb5-3",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26458"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26458",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592209",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5-3",
+         "source_id": "deb://ubuntu:jammy:libkrb5-3",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26461"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26461",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592210",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5-3",
+         "source_id": "deb://ubuntu:jammy:libkrb5-3",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26462"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26462",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592208",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5support0",
+         "source_id": "deb://ubuntu:jammy:libkrb5support0",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26458"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26458",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592209",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5support0",
+         "source_id": "deb://ubuntu:jammy:libkrb5support0",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26461"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26461",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-592210",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5support0",
+         "source_id": "deb://ubuntu:jammy:libkrb5support0",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-26462"
+                  }
+               ],
+               "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-26462",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-86241",
+         "severity": "Low",
+         "jfrog_severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libgssapi-krb5-2",
+         "source_id": "deb://ubuntu:jammy:libgssapi-krb5-2",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2018-5709",
+                     "cwe": [
+                        "CWE-190"
+                     ],
+                     "cwe_details": {
+                        "CWE-190": {
+                           "name": "Integer Overflow or Wraparound",
+                           "description": "The product performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "14"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                     "cvss_v3": "7.5/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "2023-01-08T19:26:00Z",
+         "is_source_root": false,
+         "is_high_profile": true,
+         "high_profile_info": {
+            "Id": 0,
+            "PublicVulnsTblID": 0,
+            "VulnId": "XRAY-86241",
+            "VulnerabilityTitle": "",
+            "ShortDescription": "(Non-issue) Integer truncation in Kerberos5 leads to no impact when processing a crafted Kerberos5 beta7 format database file.",
+            "FullDescription": "[Kerberos](https://web.mit.edu/kerberos/) is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well.\n\nA [Kerberos database](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/database.html) contains all of a realm’s Kerberos principals, their passwords, and other administrative information about each principal. For the most part, you will use the `kdb5_util` program to manipulate the Kerberos database as a whole, and the `kadmin` program to make changes to the entries in the database. \n\nIn `kdb5_util`, there is a `process_k5beta7_princ` method responsible for adding Kerberos 5 beta 7 format data from a file to the Kerberos database. This function is vulnerable to integer overflow as a Database entry defined on 16-bits is assigned a 32-bits value from the given file. It turns out that it does not have any impact at all and it is not a security flaw.\n\nOriginally, the vulnerability was mistakenly reported as an Integer Overflow.\nThe issue should not affect any other data allocated close to the 16-bit integer in question. Furthermore, a negative value of the 16-bit integer does not impact the flow of the program in any meaningful way.\n\nTo trigger the integer truncation, an attacker has to get the user to use the `kdb5_util` utility to restore a Kerberos 5 - beta 7 format - database from a crafted malicious file. It can be done using the following command:\n```\nkdb5_util load -d DB_NAME DB_FILE \n```",
+            "Impact": 4,
+            "VulnerabilityType": "Unspecified",
+            "Resolution": "",
+            "ExtendedImpactReasons": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "Exploiting the issue requires the user to interact with the vulnerable software",
+                  "Description": "Requires the user to restore the Kerberos Database from a crafted malicious file, which is unlikely.",
+                  "IsPositive": 1,
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue cannot result in a severe impact (such as remote code execution)",
+                  "Description": "The integer truncation doesn't affect data allocated near the 16-bit integer and doesn't have any meaningful impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 2
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+                  "Description": "The CVSS does not reflect the fact that the vulnerability does not have any security impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 3
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The prerequisites for exploiting the issue are extremely unlikely",
+                  "Description": "A Kerberos database is not restored often. The attacker must find a way to get the user to restore the database from a crafted file. If the attacker has access to the backup file, it can be modified even without exploiting this vulnerability. The vulnerability only helps by making the attacker's modifications to the backup file seem legitimate when manually inspected.",
+                  "IsPositive": 1,
+                  "InsertOrder": 4
+               }
+            ],
+            "ExtendedReferences": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Advisory",
+                  "Title": "Advisory",
+                  "Url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/blob/master/Integer%20Overflow%20Description",
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Patch",
+                  "Title": "Patch",
+                  "Url": "https://github.com/krb5/krb5/commit/d15930bec22781473c2eaf72c08a145508b373ba",
+                  "InsertOrder": 2
+               }
+            ],
+            "ExtendedRelatedVulns": null
+         },
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "cve_id": "CVE-2018-5709",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "The CVE is never applicable since the integer truncation leads to no security impact",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "vulnerability_id": "CVE-2018-5709",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-86241",
+         "severity": "Low",
+         "jfrog_severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5support0",
+         "source_id": "deb://ubuntu:jammy:libkrb5support0",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2018-5709",
+                     "cwe": [
+                        "CWE-190"
+                     ],
+                     "cwe_details": {
+                        "CWE-190": {
+                           "name": "Integer Overflow or Wraparound",
+                           "description": "The product performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "14"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                     "cvss_v3": "7.5/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "2023-01-08T19:26:00Z",
+         "is_source_root": false,
+         "is_high_profile": true,
+         "high_profile_info": {
+            "Id": 0,
+            "PublicVulnsTblID": 0,
+            "VulnId": "XRAY-86241",
+            "VulnerabilityTitle": "",
+            "ShortDescription": "(Non-issue) Integer truncation in Kerberos5 leads to no impact when processing a crafted Kerberos5 beta7 format database file.",
+            "FullDescription": "[Kerberos](https://web.mit.edu/kerberos/) is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well.\n\nA [Kerberos database](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/database.html) contains all of a realm’s Kerberos principals, their passwords, and other administrative information about each principal. For the most part, you will use the `kdb5_util` program to manipulate the Kerberos database as a whole, and the `kadmin` program to make changes to the entries in the database. \n\nIn `kdb5_util`, there is a `process_k5beta7_princ` method responsible for adding Kerberos 5 beta 7 format data from a file to the Kerberos database. This function is vulnerable to integer overflow as a Database entry defined on 16-bits is assigned a 32-bits value from the given file. It turns out that it does not have any impact at all and it is not a security flaw.\n\nOriginally, the vulnerability was mistakenly reported as an Integer Overflow.\nThe issue should not affect any other data allocated close to the 16-bit integer in question. Furthermore, a negative value of the 16-bit integer does not impact the flow of the program in any meaningful way.\n\nTo trigger the integer truncation, an attacker has to get the user to use the `kdb5_util` utility to restore a Kerberos 5 - beta 7 format - database from a crafted malicious file. It can be done using the following command:\n```\nkdb5_util load -d DB_NAME DB_FILE \n```",
+            "Impact": 4,
+            "VulnerabilityType": "Unspecified",
+            "Resolution": "",
+            "ExtendedImpactReasons": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "Exploiting the issue requires the user to interact with the vulnerable software",
+                  "Description": "Requires the user to restore the Kerberos Database from a crafted malicious file, which is unlikely.",
+                  "IsPositive": 1,
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue cannot result in a severe impact (such as remote code execution)",
+                  "Description": "The integer truncation doesn't affect data allocated near the 16-bit integer and doesn't have any meaningful impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 2
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+                  "Description": "The CVSS does not reflect the fact that the vulnerability does not have any security impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 3
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The prerequisites for exploiting the issue are extremely unlikely",
+                  "Description": "A Kerberos database is not restored often. The attacker must find a way to get the user to restore the database from a crafted file. If the attacker has access to the backup file, it can be modified even without exploiting this vulnerability. The vulnerability only helps by making the attacker's modifications to the backup file seem legitimate when manually inspected.",
+                  "IsPositive": 1,
+                  "InsertOrder": 4
+               }
+            ],
+            "ExtendedReferences": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Advisory",
+                  "Title": "Advisory",
+                  "Url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/blob/master/Integer%20Overflow%20Description",
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Patch",
+                  "Title": "Patch",
+                  "Url": "https://github.com/krb5/krb5/commit/d15930bec22781473c2eaf72c08a145508b373ba",
+                  "InsertOrder": 2
+               }
+            ],
+            "ExtendedRelatedVulns": null
+         },
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "cve_id": "CVE-2018-5709",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "The CVE is never applicable since the integer truncation leads to no security impact",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "vulnerability_id": "CVE-2018-5709",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-86241",
+         "severity": "Low",
+         "jfrog_severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libk5crypto3",
+         "source_id": "deb://ubuntu:jammy:libk5crypto3",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2018-5709",
+                     "cwe": [
+                        "CWE-190"
+                     ],
+                     "cwe_details": {
+                        "CWE-190": {
+                           "name": "Integer Overflow or Wraparound",
+                           "description": "The product performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "14"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                     "cvss_v3": "7.5/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "2023-01-08T19:26:00Z",
+         "is_source_root": false,
+         "is_high_profile": true,
+         "high_profile_info": {
+            "Id": 0,
+            "PublicVulnsTblID": 0,
+            "VulnId": "XRAY-86241",
+            "VulnerabilityTitle": "",
+            "ShortDescription": "(Non-issue) Integer truncation in Kerberos5 leads to no impact when processing a crafted Kerberos5 beta7 format database file.",
+            "FullDescription": "[Kerberos](https://web.mit.edu/kerberos/) is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well.\n\nA [Kerberos database](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/database.html) contains all of a realm’s Kerberos principals, their passwords, and other administrative information about each principal. For the most part, you will use the `kdb5_util` program to manipulate the Kerberos database as a whole, and the `kadmin` program to make changes to the entries in the database. \n\nIn `kdb5_util`, there is a `process_k5beta7_princ` method responsible for adding Kerberos 5 beta 7 format data from a file to the Kerberos database. This function is vulnerable to integer overflow as a Database entry defined on 16-bits is assigned a 32-bits value from the given file. It turns out that it does not have any impact at all and it is not a security flaw.\n\nOriginally, the vulnerability was mistakenly reported as an Integer Overflow.\nThe issue should not affect any other data allocated close to the 16-bit integer in question. Furthermore, a negative value of the 16-bit integer does not impact the flow of the program in any meaningful way.\n\nTo trigger the integer truncation, an attacker has to get the user to use the `kdb5_util` utility to restore a Kerberos 5 - beta 7 format - database from a crafted malicious file. It can be done using the following command:\n```\nkdb5_util load -d DB_NAME DB_FILE \n```",
+            "Impact": 4,
+            "VulnerabilityType": "Unspecified",
+            "Resolution": "",
+            "ExtendedImpactReasons": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "Exploiting the issue requires the user to interact with the vulnerable software",
+                  "Description": "Requires the user to restore the Kerberos Database from a crafted malicious file, which is unlikely.",
+                  "IsPositive": 1,
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue cannot result in a severe impact (such as remote code execution)",
+                  "Description": "The integer truncation doesn't affect data allocated near the 16-bit integer and doesn't have any meaningful impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 2
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+                  "Description": "The CVSS does not reflect the fact that the vulnerability does not have any security impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 3
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The prerequisites for exploiting the issue are extremely unlikely",
+                  "Description": "A Kerberos database is not restored often. The attacker must find a way to get the user to restore the database from a crafted file. If the attacker has access to the backup file, it can be modified even without exploiting this vulnerability. The vulnerability only helps by making the attacker's modifications to the backup file seem legitimate when manually inspected.",
+                  "IsPositive": 1,
+                  "InsertOrder": 4
+               }
+            ],
+            "ExtendedReferences": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Advisory",
+                  "Title": "Advisory",
+                  "Url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/blob/master/Integer%20Overflow%20Description",
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Patch",
+                  "Title": "Patch",
+                  "Url": "https://github.com/krb5/krb5/commit/d15930bec22781473c2eaf72c08a145508b373ba",
+                  "InsertOrder": 2
+               }
+            ],
+            "ExtendedRelatedVulns": null
+         },
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "cve_id": "CVE-2018-5709",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "The CVE is never applicable since the integer truncation leads to no security impact",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "vulnerability_id": "CVE-2018-5709",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-86241",
+         "severity": "Low",
+         "jfrog_severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libkrb5-3",
+         "source_id": "deb://ubuntu:jammy:libkrb5-3",
+         "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+         "component_versions": {
+            "id": "ubuntu:jammy:krb5",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2018-5709",
+                     "cwe": [
+                        "CWE-190"
+                     ],
+                     "cwe_details": {
+                        "CWE-190": {
+                           "name": "Integer Overflow or Wraparound",
+                           "description": "The product performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control.",
+                           "categories": [
+                              {
+                                 "category": "2023 CWE Top 25",
+                                 "rank": "14"
+                              }
+                           ]
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                     "cvss_v3": "7.5/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "2023-01-08T19:26:00Z",
+         "is_source_root": false,
+         "is_high_profile": true,
+         "high_profile_info": {
+            "Id": 0,
+            "PublicVulnsTblID": 0,
+            "VulnId": "XRAY-86241",
+            "VulnerabilityTitle": "",
+            "ShortDescription": "(Non-issue) Integer truncation in Kerberos5 leads to no impact when processing a crafted Kerberos5 beta7 format database file.",
+            "FullDescription": "[Kerberos](https://web.mit.edu/kerberos/) is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well.\n\nA [Kerberos database](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/database.html) contains all of a realm’s Kerberos principals, their passwords, and other administrative information about each principal. For the most part, you will use the `kdb5_util` program to manipulate the Kerberos database as a whole, and the `kadmin` program to make changes to the entries in the database. \n\nIn `kdb5_util`, there is a `process_k5beta7_princ` method responsible for adding Kerberos 5 beta 7 format data from a file to the Kerberos database. This function is vulnerable to integer overflow as a Database entry defined on 16-bits is assigned a 32-bits value from the given file. It turns out that it does not have any impact at all and it is not a security flaw.\n\nOriginally, the vulnerability was mistakenly reported as an Integer Overflow.\nThe issue should not affect any other data allocated close to the 16-bit integer in question. Furthermore, a negative value of the 16-bit integer does not impact the flow of the program in any meaningful way.\n\nTo trigger the integer truncation, an attacker has to get the user to use the `kdb5_util` utility to restore a Kerberos 5 - beta 7 format - database from a crafted malicious file. It can be done using the following command:\n```\nkdb5_util load -d DB_NAME DB_FILE \n```",
+            "Impact": 4,
+            "VulnerabilityType": "Unspecified",
+            "Resolution": "",
+            "ExtendedImpactReasons": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "Exploiting the issue requires the user to interact with the vulnerable software",
+                  "Description": "Requires the user to restore the Kerberos Database from a crafted malicious file, which is unlikely.",
+                  "IsPositive": 1,
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue cannot result in a severe impact (such as remote code execution)",
+                  "Description": "The integer truncation doesn't affect data allocated near the 16-bit integer and doesn't have any meaningful impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 2
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+                  "Description": "The CVSS does not reflect the fact that the vulnerability does not have any security impact.",
+                  "IsPositive": 1,
+                  "InsertOrder": 3
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The prerequisites for exploiting the issue are extremely unlikely",
+                  "Description": "A Kerberos database is not restored often. The attacker must find a way to get the user to restore the database from a crafted file. If the attacker has access to the backup file, it can be modified even without exploiting this vulnerability. The vulnerability only helps by making the attacker's modifications to the backup file seem legitimate when manually inspected.",
+                  "IsPositive": 1,
+                  "InsertOrder": 4
+               }
+            ],
+            "ExtendedReferences": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Advisory",
+                  "Title": "Advisory",
+                  "Url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/blob/master/Integer%20Overflow%20Description",
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Patch",
+                  "Title": "Patch",
+                  "Url": "https://github.com/krb5/krb5/commit/d15930bec22781473c2eaf72c08a145508b373ba",
+                  "InsertOrder": 2
+               }
+            ],
+            "ExtendedRelatedVulns": null
+         },
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "cve_id": "CVE-2018-5709",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "The CVE is never applicable since the integer truncation leads to no security impact",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.3",
+            "vulnerability_id": "CVE-2018-5709",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-531888",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of \"endless output\" and \"denial of service\" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:liblzma5",
+         "source_id": "deb://ubuntu:jammy:liblzma5",
+         "source_comp_id": "deb://ubuntu:jammy:liblzma5:5.2.5-2ubuntu1",
+         "component_versions": {
+            "id": "ubuntu:jammy:xz-utils",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2020-22916",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "5.5/CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "** DISPUTED ** An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of \"endless output\" and \"denial of service\" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2020-22916",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-540543",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libncurses6",
+         "source_id": "deb://ubuntu:jammy:libncurses6",
+         "source_comp_id": "deb://ubuntu:jammy:libncurses6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-50495",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "6.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-50495",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-590841",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libncurses6",
+         "source_id": "deb://ubuntu:jammy:libncurses6",
+         "source_comp_id": "deb://ubuntu:jammy:libncurses6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-45918"
+                  }
+               ],
+               "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-45918",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-540543",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libncursesw6",
+         "source_id": "deb://ubuntu:jammy:libncursesw6",
+         "source_comp_id": "deb://ubuntu:jammy:libncursesw6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-50495",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "6.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-50495",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-590841",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libncursesw6",
+         "source_id": "deb://ubuntu:jammy:libncursesw6",
+         "source_comp_id": "deb://ubuntu:jammy:libncursesw6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-45918"
+                  }
+               ],
+               "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-45918",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-86893",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libpcre3",
+         "source_id": "deb://ubuntu:jammy:libpcre3",
+         "source_comp_id": "deb://ubuntu:jammy:libpcre3:2:8.39-13ubuntu0.22.04.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:pcre3",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2017-11164",
+                     "cwe": [
+                        "CWE-674"
+                     ],
+                     "cwe_details": {
+                        "CWE-674": {
+                           "name": "Uncontrolled Recursion",
+                           "description": "The product does not properly control the amount of recursion that takes place, consuming excessive resources, such as allocated memory or the program stack."
+                        }
+                     },
+                     "cvss_v2": "7.8/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:C",
+                     "cvss_v3": "7.5/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": true,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libpcre3:2:8.39-13ubuntu0.22.04.1",
+            "cve_id": "CVE-2017-11164",
+            "scan_status": 1,
+            "applicability": true,
+            "evidence": [
+               {
+                  "column_names": [
+                     "Path",
+                     "Offset",
+                     "Symbol",
+                     "Issue Found"
+                  ],
+                  "rows": [
+                     [
+                        "/usr/bin/grep",
+                        "0x0002cd58",
+                        "pcre_exec",
+                        "References to the vulnerable functions were found"
+                     ],
+                     [
+                        "/usr/bin/grep",
+                        "0x0002ce10",
+                        "pcre_compile",
+                        "References to the vulnerable functions were found"
+                     ]
+                  ]
+               }
+            ],
+            "info": "References to the vulnerable functions were found",
+            "details": [
+               {
+                  "file_path": "/usr/bin/grep",
+                  "details": "Offset: 0x0002cd58, Symbol: pcre_exec, Issue Found: References to the vulnerable functions were found"
+               },
+               {
+                  "file_path": "/usr/bin/grep",
+                  "details": "Offset: 0x0002ce10, Symbol: pcre_compile, Issue Found: References to the vulnerable functions were found"
+               }
+            ]
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libpcre3:2:8.39-13ubuntu0.22.04.1",
+            "vulnerability_id": "CVE-2017-11164",
+            "result": "applicable"
+         }
+      },
+      {
+         "id": "XRAY-597585",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libssl3",
+         "source_id": "deb://ubuntu:jammy:libssl3",
+         "source_comp_id": "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-2511"
+                  }
+               ],
+               "description": "Issue summary: Some non-default TLS server configurations can cause unbounded memory growth when processing TLSv1.3 sessions Impact summary: An attacker may exploit certain server configurations to trigger unbounded memory growth that would lead to a Denial of Service This problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is being used (but not if early_data support is also configured and the default anti-replay protection is in use). In this case, under certain conditions, the session cache can get into an incorrect state and it will fail to flush properly as it fills. The session cache will continue to grow in an unbounded manner. A malicious client could deliberately create the scenario for this failure to force a Denial of Service. It may also happen by accident in normal operation. This issue only affects TLS servers supporting TLSv1.3. It does not affect TLS clients. The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL 1.0.2 is also not affected by this issue.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-2511",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-601466",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libssl3",
+         "source_id": "deb://ubuntu:jammy:libssl3",
+         "source_comp_id": "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-4603"
+                  }
+               ],
+               "description": "Issue summary: Checking excessively long DSA keys or parameters may be very slow. Impact summary: Applications that use the functions EVP_PKEY_param_check() or EVP_PKEY_public_check() to check a DSA public key or DSA parameters may experience long delays. Where the key or parameters that are being checked have been obtained from an untrusted source this may lead to a Denial of Service. The functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform various checks on DSA parameters. Some of those computations take a long time if the modulus (`p` parameter) is too large. Trying to use a very large modulus is slow and OpenSSL will not allow using public keys with a modulus which is over 10,000 bits in length for signature verification. However the key and parameter check functions do not limit the modulus size when performing the checks. An application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check() and supplies a key or parameters obtained from an untrusted source could be vulnerable to a Denial of Service attack. These functions are not called by OpenSSL itself on untrusted DSA keys so only applications that directly call these functions may be vulnerable. Also vulnerable are the OpenSSL pkey and pkeyparam command line applications when using the `-check` option. The OpenSSL SSL/TLS implementation is not affected by this issue. The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-4603",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-413268",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libstdc++6",
+         "source_id": "deb://ubuntu:jammy:libstdc++6",
+         "source_comp_id": "deb://ubuntu:jammy:libstdc++6:12.3.0-1ubuntu1~22.04",
+         "component_versions": {
+            "id": "ubuntu:jammy:gcc-12",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2022-27943",
+                     "cwe": [
+                        "CWE-674"
+                     ],
+                     "cwe_details": {
+                        "CWE-674": {
+                           "name": "Uncontrolled Recursion",
+                           "description": "The product does not properly control the amount of recursion that takes place, consuming excessive resources, such as allocated memory or the program stack."
+                        }
+                     },
+                     "cvss_v2": "4.3/CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "5.5/CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2022-27943",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-588816",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libsystemd0",
+         "source_id": "deb://ubuntu:jammy:libsystemd0",
+         "source_comp_id": "deb://ubuntu:jammy:libsystemd0:249.11-0ubuntu3.12",
+         "component_versions": {
+            "id": "ubuntu:jammy:systemd",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-7008",
+                     "cwe": [
+                        "NVD-CWE-Other"
+                     ],
+                     "cvss_v3": "5.9/CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-7008",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-540543",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libtinfo6",
+         "source_id": "deb://ubuntu:jammy:libtinfo6",
+         "source_comp_id": "deb://ubuntu:jammy:libtinfo6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-50495",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "6.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-50495",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-590841",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libtinfo6",
+         "source_id": "deb://ubuntu:jammy:libtinfo6",
+         "source_comp_id": "deb://ubuntu:jammy:libtinfo6:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-45918"
+                  }
+               ],
+               "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-45918",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-588816",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libudev1",
+         "source_id": "deb://ubuntu:jammy:libudev1",
+         "source_comp_id": "deb://ubuntu:jammy:libudev1:249.11-0ubuntu3.12",
+         "component_versions": {
+            "id": "ubuntu:jammy:systemd",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-7008",
+                     "cwe": [
+                        "NVD-CWE-Other"
+                     ],
+                     "cvss_v3": "5.9/CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                  }
+               ],
+               "description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-7008",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-605798",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libyaml 0.2.5 is vulnerable to a heap-based Buffer Overflow in yaml_document_add_sequence in api.c. NOTE: the supplier disputes this because the finding represents a user error. The problem is that the application, which was making use of the libyaml library, omitted the required calls to the yaml_document_initialize and yaml_document_delete functions.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libyaml-0-2",
+         "source_id": "deb://ubuntu:jammy:libyaml-0-2",
+         "source_comp_id": "deb://ubuntu:jammy:libyaml-0-2:0.2.2-1build2",
+         "component_versions": {
+            "id": "ubuntu:jammy:libyaml",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-35329"
+                  }
+               ],
+               "description": "** DISPUTED ** libyaml 0.2.5 is vulnerable to a heap-based Buffer Overflow in yaml_document_add_sequence in api.c. NOTE: the supplier disputes this because the finding represents a user error. The problem is that the application, which was making use of the libyaml library, omitted the required calls to the yaml_document_initialize and yaml_document_delete functions.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-35329",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-606483",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "A vulnerability was found in libyaml up to 0.2.5. Affected by this issue is the function yaml_event_delete of the file /src/libyaml/src/api.c. The manipulation leads to a double-free.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libyaml-0-2",
+         "source_id": "deb://ubuntu:jammy:libyaml-0-2",
+         "source_comp_id": "deb://ubuntu:jammy:libyaml-0-2:0.2.2-1build2",
+         "component_versions": {
+            "id": "ubuntu:jammy:libyaml",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-35325"
+                  }
+               ],
+               "description": "A vulnerability was found in libyaml up to 0.2.5. Affected by this issue is the function yaml_event_delete of the file /src/libyaml/src/api.c. The manipulation leads to a double-free.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-35325",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-606484",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libyaml v0.2.5 is vulnerable to Buffer Overflow. Affected by this issue is the function yaml_emitter_emit of the file /src/libyaml/src/emitter.c. The manipulation leads to a double-free.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libyaml-0-2",
+         "source_id": "deb://ubuntu:jammy:libyaml-0-2",
+         "source_comp_id": "deb://ubuntu:jammy:libyaml-0-2:0.2.2-1build2",
+         "component_versions": {
+            "id": "ubuntu:jammy:libyaml",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-35326"
+                  }
+               ],
+               "description": "libyaml v0.2.5 is vulnerable to Buffer Overflow. Affected by this issue is the function yaml_emitter_emit of the file /src/libyaml/src/emitter.c. The manipulation leads to a double-free.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-35326",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-606485",
+         "severity": "Medium",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "libyaml v0.2.5 is vulnerable to DDOS. Affected by this issue is the function yaml_parser_parse of the file /src/libyaml/src/parser.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libyaml-0-2",
+         "source_id": "deb://ubuntu:jammy:libyaml-0-2",
+         "source_comp_id": "deb://ubuntu:jammy:libyaml-0-2:0.2.2-1build2",
+         "component_versions": {
+            "id": "ubuntu:jammy:libyaml",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-35328"
+                  }
+               ],
+               "description": "libyaml v0.2.5 is vulnerable to DDOS. Affected by this issue is the function yaml_parser_parse of the file /src/libyaml/src/parser.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-35328",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-513908",
+         "severity": "Low",
+         "jfrog_severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libzstd1",
+         "source_id": "deb://ubuntu:jammy:libzstd1",
+         "source_comp_id": "deb://ubuntu:jammy:libzstd1:1.4.8+dfsg-3build1",
+         "component_versions": {
+            "id": "ubuntu:jammy:libzstd",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2022-4899",
+                     "cwe": [
+                        "CWE-400"
+                     ],
+                     "cwe_details": {
+                        "CWE-400": {
+                           "name": "Uncontrolled Resource Consumption",
+                           "description": "The product does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources."
+                        }
+                     },
+                     "cvss_v3": "7.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "2023-05-14T11:37:00Z",
+         "is_source_root": false,
+         "is_high_profile": true,
+         "high_profile_info": {
+            "Id": 0,
+            "PublicVulnsTblID": 0,
+            "VulnId": "XRAY-513908",
+            "VulnerabilityTitle": "",
+            "ShortDescription": "Out-of-bounds read in zstd may lead denial of service when using crafted command-line arguments.",
+            "FullDescription": "[Zstandard](https://facebook.github.io/zstd/) is a fast lossless compression algorithm, providing high compression ratios and targeting real-time compression scenarios at zlib-level.\n`zstd` is the reference implementation in C that offers a very wide range of speed / compression trade-off, and is backed by an extremely fast decoder.\nIt was discovered that running the `zstd` tool with arbitrary arguments can lead to an OOB read due to a design flaw, which may lead to a crash of `zstd`. Since `zstd` is a standalone (forked) tool - the crash has a minimal security impact.\n\nSpecifically, passing the `--output-dir-flat` or `--output-dir-mirror` arguments with an empty string, leads to an OOB read.\n\nIt should be noted that the OOB read is of 1 byte only, which on modern systems does not even lead to a crash (in most cases of production-built software)",
+            "Impact": 4,
+            "VulnerabilityType": "Denial of service",
+            "Resolution": "",
+            "ExtendedImpactReasons": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue cannot result in a severe impact (such as remote code execution)",
+                  "Description": "Crashing a forked process has minimal to no security impact. Furthermore, a 1-byte OOB read will not lead to a crash in almost all cases.",
+                  "IsPositive": 1,
+                  "InsertOrder": 3
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "Exploitation of the issue is only possible when the vulnerable component is used in a specific manner. The attacker has to perform per-target research to determine the vulnerable attack vector",
+                  "Description": "The attacker must be able to supply command line arguments to an invocation of the `zstd` CLI tool.",
+                  "IsPositive": 1,
+                  "InsertOrder": 4
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The issue is trivial to exploit and does not require a published writeup or PoC",
+                  "Description": "Passing an empty string to the flags \"--output-dir-flat\" or \"--output-dir-mirror\" will trigger the 1-byte OOB read",
+                  "IsPositive": 0,
+                  "InsertOrder": 1
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "Name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+                  "Description": "The CVSS does not take into account the high attack complexity and low real-world severity of this issue",
+                  "IsPositive": 1,
+                  "InsertOrder": 2
+               }
+            ],
+            "ExtendedReferences": [
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Advisory",
+                  "Title": "Official GitHub Issue",
+                  "Url": "https://github.com/facebook/zstd/issues/3200",
+                  "InsertOrder": 2
+               },
+               {
+                  "Id": 0,
+                  "PublicVulnsExtendedTblId": 0,
+                  "RefType": "Patch",
+                  "Title": "Official Fix Commit",
+                  "Url": "https://github.com/facebook/zstd/pull/3220/files",
+                  "InsertOrder": 1
+               }
+            ],
+            "ExtendedRelatedVulns": null
+         },
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libzstd1:1.4.8+dfsg-3build1",
+            "cve_id": "CVE-2022-4899",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "Vulnerable use of zstd is not found since --output-dir-flat/--output-dir-mirror is never used",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:libzstd1:1.4.8+dfsg-3build1",
+            "vulnerability_id": "CVE-2022-4899",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-225378",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:locales",
+         "source_id": "deb://ubuntu:jammy:locales",
+         "source_comp_id": "deb://ubuntu:jammy:locales:2.35-0ubuntu3.8",
+         "component_versions": {
+            "id": "ubuntu:jammy:glibc",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2016-20013",
+                     "cwe": [
+                        "CWE-770"
+                     ],
+                     "cwe_details": {
+                        "CWE-770": {
+                           "name": "Allocation of Resources Without Limits or Throttling",
+                           "description": "The product allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor."
+                        }
+                     },
+                     "cvss_v2": "5.0/CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                     "cvss_v3": "7.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2016-20013",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-514884",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:login",
+         "source_id": "deb://ubuntu:jammy:login",
+         "source_comp_id": "deb://ubuntu:jammy:login:1:4.8.1-2ubuntu2.2",
+         "component_versions": {
+            "id": "ubuntu:jammy:shadow",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-29383",
+                     "cwe": [
+                        "CWE-74"
+                     ],
+                     "cwe_details": {
+                        "CWE-74": {
+                           "name": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+                           "description": "The product constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component."
+                        }
+                     },
+                     "cvss_v3": "3.3/CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+                  }
+               ],
+               "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-29383",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-540543",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:ncurses-base",
+         "source_id": "deb://ubuntu:jammy:ncurses-base",
+         "source_comp_id": "deb://ubuntu:jammy:ncurses-base:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-50495",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "6.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-50495",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-590841",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:ncurses-base",
+         "source_id": "deb://ubuntu:jammy:ncurses-base",
+         "source_comp_id": "deb://ubuntu:jammy:ncurses-base:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-45918"
+                  }
+               ],
+               "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-45918",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-540543",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:ncurses-bin",
+         "source_id": "deb://ubuntu:jammy:ncurses-bin",
+         "source_comp_id": "deb://ubuntu:jammy:ncurses-bin:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-50495",
+                     "cwe": [
+                        "NVD-CWE-noinfo"
+                     ],
+                     "cvss_v3": "6.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-50495",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-590841",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:ncurses-bin",
+         "source_id": "deb://ubuntu:jammy:ncurses-bin",
+         "source_comp_id": "deb://ubuntu:jammy:ncurses-bin:6.3-2ubuntu0.1",
+         "component_versions": {
+            "id": "ubuntu:jammy:ncurses",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-45918"
+                  }
+               ],
+               "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-45918",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-597585",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:openssl",
+         "source_id": "deb://ubuntu:jammy:openssl",
+         "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-2511"
+                  }
+               ],
+               "description": "Issue summary: Some non-default TLS server configurations can cause unbounded memory growth when processing TLSv1.3 sessions Impact summary: An attacker may exploit certain server configurations to trigger unbounded memory growth that would lead to a Denial of Service This problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is being used (but not if early_data support is also configured and the default anti-replay protection is in use). In this case, under certain conditions, the session cache can get into an incorrect state and it will fail to flush properly as it fills. The session cache will continue to grow in an unbounded manner. A malicious client could deliberately create the scenario for this failure to force a Denial of Service. It may also happen by accident in normal operation. This issue only affects TLS servers supporting TLSv1.3. It does not affect TLS clients. The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL 1.0.2 is also not affected by this issue.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-2511",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-601466",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:openssl",
+         "source_id": "deb://ubuntu:jammy:openssl",
+         "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-4603"
+                  }
+               ],
+               "description": "Issue summary: Checking excessively long DSA keys or parameters may be very slow. Impact summary: Applications that use the functions EVP_PKEY_param_check() or EVP_PKEY_public_check() to check a DSA public key or DSA parameters may experience long delays. Where the key or parameters that are being checked have been obtained from an untrusted source this may lead to a Denial of Service. The functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform various checks on DSA parameters. Some of those computations take a long time if the modulus (`p` parameter) is too large. Trying to use a very large modulus is slow and OpenSSL will not allow using public keys with a modulus which is over 10,000 bits in length for signature verification. However the key and parameter check functions do not limit the modulus size when performing the checks. An application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check() and supplies a key or parameters obtained from an untrusted source could be vulnerable to a Denial of Service attack. These functions are not called by OpenSSL itself on untrusted DSA keys so only applications that directly call these functions may be vulnerable. Also vulnerable are the OpenSSL pkey and pkeyparam command line applications when using the `-check` option. The OpenSSL SSL/TLS implementation is not affected by this issue. The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-4603",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-603658",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Use After Free with SSL_free_buffers",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:libssl3",
+         "source_id": "deb://ubuntu:jammy:libssl3",
+         "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-4741"
+                  }
+               ],
+               "description": "Use After Free with SSL_free_buffers",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+            "cve_id": "CVE-2024-4741",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "No references to the vulnerable functions were found",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+            "vulnerability_id": "CVE-2024-4741",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-603658",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "Use After Free with SSL_free_buffers",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:openssl",
+         "source_id": "deb://ubuntu:jammy:openssl",
+         "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+         "component_versions": {
+            "id": "ubuntu:jammy:openssl",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-4741"
+                  }
+               ],
+               "description": "Use After Free with SSL_free_buffers",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "is_cve_applicable": false,
+         "cve_applicability_info": {
+            "scanner_available": true,
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+            "cve_id": "CVE-2024-4741",
+            "scan_status": 1,
+            "applicability": false,
+            "evidence": null,
+            "info": "No references to the vulnerable functions were found",
+            "details": null
+         },
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.16",
+            "vulnerability_id": "CVE-2024-4741",
+            "result": "not_applicable"
+         }
+      },
+      {
+         "id": "XRAY-514884",
+         "severity": "Low",
+         "severity_source": "Ubuntu CVE Tracker",
+         "pkg_type": "debian",
+         "summary": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "ubuntu:jammy:passwd",
+         "source_id": "deb://ubuntu:jammy:passwd",
+         "source_comp_id": "deb://ubuntu:jammy:passwd:1:4.8.1-2ubuntu2.2",
+         "component_versions": {
+            "id": "ubuntu:jammy:shadow",
+            "vulnerable_versions": [
+               "All Versions"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2023-29383",
+                     "cwe": [
+                        "CWE-74"
+                     ],
+                     "cwe_details": {
+                        "CWE-74": {
+                           "name": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+                           "description": "The product constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component."
+                        }
+                     },
+                     "cvss_v3": "3.3/CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+                  }
+               ],
+               "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            ""
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2023-29383",
+            "result": "not_covered"
+         }
+      },
+      {
+         "id": "XRAY-610348",
+         "severity": "High",
+         "severity_source": "GitHub Security Advisory",
+         "pkg_type": "maven",
+         "summary": "Improper Handling of Exceptional Conditions, Uncontrolled Resource Consumption vulnerability in Apache Tomcat. When processing an HTTP/2 stream, Tomcat did not handle some cases of excessive HTTP headers correctly. This led to a miscounting of active HTTP/2 streams which in turn led to the use of an incorrect infinite timeout which allowed connections to remain open which should have been closed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M20, from 10.1.0-M1 through 10.1.24, from 9.0.0-M1 through 9.0.89.\n\nUsers are recommended to upgrade to version 11.0.0-M21, 10.1.25 or 9.0.90, which fixes the issue.",
+         "issue_type": "security",
+         "provider": "JFrog",
+         "component": "org.apache.tomcat.embed:tomcat-embed-core",
+         "source_id": "gav://org.apache.tomcat.embed:tomcat-embed-core",
+         "source_comp_id": "gav://org.apache.tomcat.embed:tomcat-embed-core:10.1.24",
+         "component_versions": {
+            "id": "org.apache.tomcat.embed:tomcat-embed-core",
+            "vulnerable_versions": [
+               "10.1.0-M1 ≤ Version < 10.1.25",
+               "11.0.0-M1 ≤ Version < 11.0.0-M21",
+               "9.0.0-M1 ≤ Version < 9.0.90"
+            ],
+            "fixed_versions": [
+               "10.1.25",
+               "11.0.0-M21",
+               "9.0.90"
+            ],
+            "more_details": {
+               "cves": [
+                  {
+                     "cve": "CVE-2024-34750",
+                     "cwe": [
+                        "CWE-400",
+                        "CWE-755"
+                     ],
+                     "cwe_details": {
+                        "CWE-400": {
+                           "name": "Uncontrolled Resource Consumption",
+                           "description": "The product does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources."
+                        },
+                        "CWE-755": {
+                           "name": "Improper Handling of Exceptional Conditions",
+                           "description": "The product does not handle or incorrectly handles an exceptional condition."
+                        }
+                     },
+                     "cvss_v3": "7.5/CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                  }
+               ],
+               "description": "Improper Handling of Exceptional Conditions, Uncontrolled Resource Consumption vulnerability in Apache Tomcat. When processing an HTTP/2 stream, Tomcat did not handle some cases of excessive HTTP headers correctly. This led to a miscounting of active HTTP/2 streams which in turn led to the use of an incorrect infinite timeout which allowed connections to remain open which should have been closed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M20, from 10.1.0-M1 through 10.1.24, from 9.0.0-M1 through 9.0.89.\n\nUsers are recommended to upgrade to version 11.0.0-M21, 10.1.25 or 9.0.90, which fixes the issue.",
+               "provider": "JFrog"
+            }
+         },
+         "edited": "0001-01-01T00:00:00Z",
+         "is_source_root": false,
+         "is_high_profile": false,
+         "component_physical_paths": [
+            "sha256__76b95d5700ef4e9116174c0d91be7f282d282ff9aed94109dbca2883d8afeae0.tar.gz/workspace/BOOT-INF/lib/tomcat-embed-core-10.1.24.jar"
+         ],
+         "applicability_detail": {
+            "component_id": "docker://spring-petclinic:3.3.0-SNAPSHOT",
+            "source_comp_id": "",
+            "vulnerability_id": "CVE-2024-34750",
+            "result": "not_covered"
+         }
+      }
+   ]
+}
